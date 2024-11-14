@@ -3,7 +3,7 @@
   height: 45px;
   width: 450px;
   padding: 6px;
-  font-size: 17px;
+  font-size: 14px;
   margin: 4px;
   border: 1px solid #B4B7BD;
 border-radius: 5px;
@@ -11,5 +11,5 @@ opacity: 1;
 }
 
 .input-label {
-  font-size: 20px;
+  font-size: 16px;
 }

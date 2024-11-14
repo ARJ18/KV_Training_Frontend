@@ -1,8 +1,4 @@
-.create-employee {
-  height: 100vh;
-  background-color:#FAFAFA;
-  display: flex;
-}
+
 
 .employee-details {
   display: flex;
@@ -13,12 +9,14 @@
 }
 .create-header {
   height: 10%;
-  font-size: xx-large;
+  font-size: x-large;
   background-color: white;
   margin: 8px;
   padding: 25px;
   border-radius: 25px;
   box-shadow: 0px 3px 6px #9D9D9D29;
+  font-weight: bold;
+  align-content: center;
 }
 .grid-and-buttons {
   margin: 8px;
@@ -52,4 +50,6 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   gap:20px;
+  padding: 40px;
+
 }

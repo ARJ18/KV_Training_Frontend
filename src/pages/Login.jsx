@@ -5,11 +5,13 @@ import Button from "../components/Button";
 import Input from "../components/Input";
 import "../styles/Login.css";
 import { useLoginValidation } from "../hooks/useLoginValidation";
+import { useNavigate } from "react-router-dom";
 
-const Login = ({ onLogin }) => {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
   const [isSignup, setIsSignup] = useState(false);
 
   const handleUsernameChange = (e) => {
@@ -20,9 +22,8 @@ const Login = ({ onLogin }) => {
   };
 
   const handleLogin = () => {
-    if (localStorage.getItem(username)===password) onLogin(true);
+    if (localStorage.getItem(username) === password) navigate("/employee");
     else {
-      onLogin(false);
       console.log("Wrong Password");
     }
   };
@@ -30,7 +31,6 @@ const Login = ({ onLogin }) => {
     console.log(username, password);
     localStorage.setItem(username, password);
     setIsSignup(false);
- 
   };
 
   const { errorUsername, errorPassword } = useLoginValidation({

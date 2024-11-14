@@ -1,11 +1,26 @@
-import "../styles/Sidebar.css"
-
+import "../styles/Sidebar.css";
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="sidebar-box"></div>
+      <NavLink
+        to=""
+        className={({ isActive }) =>
+         isActive ? "active" : "pending"
+        }
+      >
+        <div className="sidebar-box">Employee list</div>
+      </NavLink>
+      <NavLink
+        to="create"
+        className={({ isActive }) =>
+          isActive ? "active" : "pending"
+         }
+      >
+        <div className="sidebar-box">Create Employee</div>
+      </NavLink>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

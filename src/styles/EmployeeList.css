@@ -1,0 +1,45 @@
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4px;
+  margin: 4px;
+}
+.create-header {
+  height: 10%;
+  font-size: x-large;
+  background-color: white;
+  margin: 8px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #9d9d9d29;
+  font-weight: bold;
+  align-content: center;
+}
+.create-box {
+  font-size: large;
+  background-color: white;
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-radius:    5px;
+  box-shadow: 0px 3px 6px #9d9d9d29;
+  height: 58px;
+  align-content: center;
+  padding: 4px;
+}
+.create-table-header {
+  font-size: large;
+  background-color: #eaf9ff;
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #9d9d9d29;
+  height: 58px;
+  align-content: center;
+}
+
+.box-text {
+  padding: 15px;
+}
