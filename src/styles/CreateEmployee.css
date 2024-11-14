@@ -1,0 +1,55 @@
+.create-employee {
+  height: 100vh;
+  background-color:#FAFAFA;
+  display: flex;
+}
+
+.employee-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4px;
+  margin: 4px;
+}
+.create-header {
+  height: 10%;
+  font-size: xx-large;
+  background-color: white;
+  margin: 8px;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px #9D9D9D29;
+}
+.grid-and-buttons {
+  margin: 8px;
+  box-shadow: 0px 3px 6px #9D9D9D29;
+  
+}
+
+.create-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  grid-auto-rows: auto;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  
+}
+
+.item8 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.buttons {
+  display: flex;
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  gap:20px;
+}

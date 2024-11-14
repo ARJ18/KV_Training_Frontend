@@ -1,0 +1,28 @@
+.login-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    
+}
+
+.login-image{
+    padding: 4px;
+}
+
+.login-interface{
+    padding: 10px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    
+}
+.sign-up{
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: dodgerblue;
+}

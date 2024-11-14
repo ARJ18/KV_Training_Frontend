@@ -1,0 +1,14 @@
+.navbar{
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar-image{
+    
+   background-color: #E2E8FA;
+   justify-content: center;
+   padding: 4px;
+}
