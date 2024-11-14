@@ -7,7 +7,7 @@ const App = () => {
 
   
   if (loggedIn) {
-    return <CreateEmployee />;
+    return <CreateEmployee onLogout = {(val)=>{setLoggedIn(val)}}/>;
   }
   else
   {

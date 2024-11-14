@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
@@ -6,11 +7,11 @@ import Button from "../components/Button";
 import Input from "../components/Input";
 import Dropdown from "../components/Dropdown";
 import { Roles, Deparments, Status } from "../utils/constants";
-const CreateEmployee = () => {
+const CreateEmployee = ({onLogout}) => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar onLogout = {onLogout}/>
       <div className="create-employee">
         <Sidebar />
         <div className="employee-details">
