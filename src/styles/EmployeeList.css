@@ -1,45 +1,110 @@
-.employee-list {
+.employee-list-main-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 4px;
-  margin: 4px;
+  padding: 15px;
+  gap: 15px;
 }
-.create-header {
-  height: 10%;
+.employee-list-header {
   font-size: x-large;
   background-color: white;
-  margin: 8px;
-  padding: 25px;
+
+  padding: 15px;
   border-radius: 5px;
   box-shadow: 0px 3px 6px #9d9d9d29;
   font-weight: bold;
-  align-content: center;
-}
-.create-box {
-  font-size: large;
-  background-color: white;
-  margin: 8px;
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  border-radius:    5px;
-  box-shadow: 0px 3px 6px #9d9d9d29;
+}
+.employee-list-text {
+  margin-right: auto;
+}
+
+.filter-by {
+  margin-right: 100px;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+.ellipse {
   height: 58px;
-  align-content: center;
-  padding: 4px;
+  width: 58px;
+  border-radius: 50%;
+  background-color: #03aeee;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+.create-employee-link {
+  background: #eaf9ff 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  opacity: 1;
+  gap: 0.5rem;
+  width: 250px;
+  font: normal normal normal 20px/27px Nunito Sans;
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .create-table-header {
   font-size: large;
   background-color: #eaf9ff;
-  margin: 8px;
+
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
   box-shadow: 0px 3px 6px #9d9d9d29;
   height: 58px;
+  font-weight: bold;
+  padding: 0 15px;
+}
+.create-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-box {
+  font-size: large;
+  background-color: white;
+
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #9d9d9d29;
+  height: 58px;
   align-content: center;
+  padding: 0 15px;
 }
 
 .box-text {
-  padding: 15px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.status {
+  padding: 0.25rem 1rem;
+  background-color: #f5ecb8;
+  border-radius: 15px;
+  width: 110px;
+  text-align: center;
+}
+.box-text-action {
+  display: flex;
+  flex: 1;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
 }

@@ -22,14 +22,15 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    if (localStorage.getItem(username) === password) navigate("/employee");
+    if (localStorage.getItem(username) === (password || null))
+      navigate("/app/employee");
     else {
       console.log("Wrong Password");
     }
   };
   const handleSignup = () => {
-    console.log(username, password);
-    localStorage.setItem(username, password);
+    localStorage.setItem(username, password);``
+    console.log("Sign up successful!");
     setIsSignup(false);
   };
 
@@ -65,9 +66,9 @@ const Login = () => {
         ></Input>
         <div style={{ color: "red" }}>{errorPassword}</div>
         {isSignup ? (
-          <Button label="Sign Up" handleClick={handleSignup} color="blue" />
+          <Button label="Sign Up" handleClick={handleSignup} color="login-button" />
         ) : (
-          <Button label="Login" handleClick={handleLogin} color="blue" />
+          <Button label="Login" handleClick={handleLogin} color="login-button" />
         )}
         <a
           className="sign-up"

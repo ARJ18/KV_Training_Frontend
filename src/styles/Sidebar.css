@@ -1,36 +1,37 @@
 .sidebar {
-  height: 100vh;
   width: 15%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 3px 6px #9d9d9d29;
 }
 
+.sidebar-image {
+  background-color: #e2e8fa;
+  justify-content: center;
+  padding: 4px;
+}
 .sidebar-box {
- 
   border-radius: 50px 0px 0px 50px;
   opacity: 1;
-  width: auto;
-  height: 40px;
+  height: 60px;
   margin: 10px 0px 10px 20px;
   align-content: center;
   text-align: center;
   padding: 4px;
   font-size: 16px;
   font-weight: bold;
-  background:inherit;
- 
-  
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.active{
-color: white;
-background: #03aeee ;
-text-decoration: none;
-
+.active {
+  color: white;
+  background: #03aeee;
+  text-decoration: none;
 }
-.pending{
-color:black;
-background: white;
-text-decoration: none;
-
+.pending {
+  color: black;
+  background: white;
+  text-decoration: none;
 }

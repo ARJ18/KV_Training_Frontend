@@ -30,6 +30,25 @@
   opacity: 1;
   align-content: center;align-content: center;
 }
-.login-button:hover {
+.login-button:hover,.blue:hover {
   background-color: #067bbe;
+}
+.white:hover{
+  background-color: #8a8c8f;
+}
+.login-button {
+  
+  border: none;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+  height: 35px;
+  font-size: 16px;
+  background: #03aeee 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #bfeeff;
+  border-radius: 3px;
+  opacity: 1;
+  margin: 8px;
+  width:100%;
+  
 }

@@ -4,11 +4,21 @@
 }
 
 
-.dropdown{
+.dropdown-box{
     height: 45px;
     width: 450px;
     padding: 4px;
     font-size: 14px;
     margin: 4px;
 }
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+select option:disabled{
+    display: none;
+}
+
 

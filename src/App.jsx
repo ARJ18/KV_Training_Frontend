@@ -11,12 +11,17 @@ const App = () => {
   const router = createBrowserRouter([
     { path: "/", element: <Login />, errorElement: <NotFound /> },
     {
-      path: "/employee",
+      path: "/app",
       element: <HomeLayout />,
       children: [
-        { index: true, element: <EmployeeList /> },
+        {
+          path: "employee",
+          children: [
+            { index: true, element: <EmployeeList /> },
+            { path: ":id", element: <EmployeeDetails /> },
+          ],
+        },
         { path: "create", element: <CreateEmployee /> },
-        { path: ":id", element: <EmployeeDetails /> },
       ],
     },
   ]);

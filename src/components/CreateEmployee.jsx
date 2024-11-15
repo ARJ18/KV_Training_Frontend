@@ -7,7 +7,7 @@ import { Roles, Deparments, Status } from "../utils/constants";
 const CreateEmployee = () => {
   return (
     <div className="employee-details">
-      <div className="create-header">Create Employee</div>
+      <div className="create-employee-header">Create Employee</div>
       
       <div className="grid-and-buttons">
         <div className="create-grid">

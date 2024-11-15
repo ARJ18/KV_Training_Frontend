@@ -1,8 +1,8 @@
+/* eslint-disable react/prop-types */
 import "../styles/Button.css";
-const Button = (prop) => {
-  const { label, handleClick,color} = prop;
+const Button = ({ label, handleClick, color }) => {
   return (
-    <button onClick={handleClick} className={color} >
+    <button onClick={handleClick} className={color}>
       {label}
     </button>
   );

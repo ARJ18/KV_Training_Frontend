@@ -1,5 +1,6 @@
-const Card = (prop) => {
-    console.log(prop);
+/* eslint-disable react/prop-types */
+const Card = ({label}) => {
+
   return (
     <div
       style={{
@@ -9,7 +10,7 @@ const Card = (prop) => {
         margin: "10px 10px",
       }}
     >
-      {prop.label}
+      {label}
     </div>
   );
 };

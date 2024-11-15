@@ -6,10 +6,10 @@ import "../styles/HomeLayout.css";
 export const HomeLayout = () => {
   return (
     <div>
-      <div>
-        <Navbar />
-        <div className="employee-action">
+      <div className="container">
           <Sidebar />
+        <div className="employee-action">
+        <Navbar />
           <Outlet />
         </div>
       </div>
