@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .active {
@@ -31,7 +32,7 @@
   text-decoration: none;
 }
 .pending {
-  color: black;
+  color: #03aeee  ;
   background: white;
   text-decoration: none;
 }

@@ -1,15 +1,17 @@
 import { useParams } from "react-router-dom";
 import "../styles/EmployeeDetails.css";
-import { useEffect,useState } from "react";
+// import { useEffect,useState } from "react";
 import formatDate from "../utils/formatDate";
+import { useGetByIdQuery } from "./getByIdApi";
 const Details = () => {
-  const [employee,setEmployee] = useState();
+  // const [employee,setEmployee] = useState();
   const { id } = useParams();
-  useEffect(() => {
-    fetch(`http://localhost:3000/employee/${id}`)
-      .then((res) => res.json())
-      .then((res)=>setEmployee(res));
-  });
+  const {data:employee} = useGetByIdQuery(id);
+  // useEffect(() => {
+  //   fetch(`http://localhost:3000/employee/${id}`)
+  //     .then((res) => res.json())
+  //     .then((res)=>setEmployee(res));
+  // });
   return (
     <div className="employee-details-page">
       <div className="employee-details-header">Employee Details</div>
@@ -24,7 +26,7 @@ const Details = () => {
         </div>
         <div className="details-box">
           <p style={{ opacity: "0.5" }}>Experience</p>
-          <p>{employee?.department.id} years</p>
+          <p>1 years</p>
         </div>
         <div className="details-box">
           <p style={{ opacity: "0.5" }}>Role</p>

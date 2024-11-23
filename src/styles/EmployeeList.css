@@ -87,16 +87,26 @@
   height: 58px;
   align-content: center;
   padding: 0 15px;
-}
+  transition: transform 0.3s ease;}
 
+.create-box:hover{
+  color:#03aeee
+}
 .box-text {
   flex: 1;
   display: flex;
   align-items: center;
 }
-.status {
+.status-active{
   padding: 0.25rem 1rem;
-  background-color: #f5ecb8;
+  background-color: #D3F4BE;
+  border-radius: 15px;
+  width: 110px;
+  text-align: center;
+}
+.status-inactive{
+  padding: 0.25rem 1rem;
+  background-color:#FFBFBF;
   border-radius: 15px;
   width: 110px;
   text-align: center;

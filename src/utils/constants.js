@@ -1,19 +1,24 @@
 export const Roles = [
-  { value: "FE", label: "Front End" },
-  { value: "BE", label: "Backend" },
-  { value: "HRE", label: "HR Executive" },
+  { value: "", label: "Choose Role" },
+  { value: "UI", label: "Front End" },
+  { value: "Developer", label: "Backend" },
+  { value: "HR", label: "HR Executive" },
 ];
-
 
 export const Deparments = [
-  { value: "Admin", label: "Administration" },
-  { value: "Tech", label: "Technical" },
-  { value: "HR", label: "Human Resources" },
+  { value:0, label: "Choose Department" },
+  { value: 1, label: "Administration" },
+  { value: 2, label: "Human Resources" },
+  { value: 3, label: "Technical" },
 ];
-
 
 export const Status = [
+  { value: "", label: "Status" },
   { value: "A", label: "Active" },
   { value: "I", label: "Inactive" },
- 
 ];
+
+export const ACTION_STATES = {
+  LOAD_LIST: "LOAD_LIST",
+  ADD_LIST: "ADD_LIST",
+};

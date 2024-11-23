@@ -2,7 +2,7 @@
 import "../styles/Input.css";
 
 const Input = (props) => {
-  const { label, type, placeholder, handleChange } = props;
+  const { value,name,label, type, placeholder, handleChange, disabled=false } = props;
   return (
     <div className="input">
       <label className="input-label">{label}</label>
@@ -12,6 +12,9 @@ const Input = (props) => {
         placeholder={placeholder}
         className="input-field"
         onChange={handleChange}
+        disabled={disabled}
+        name={name}
+        value={value}
       ></input>
     </div>
   );

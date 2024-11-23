@@ -8,14 +8,14 @@ export const useLoginValidation = ({username,password}) => {
   const initialLoad2 = useRef(false);
 
   useEffect(() => {
-    if (username.length < 8) {
+    if (username.length < 3) {
       if (!initialLoad.current) initialLoad.current = true;
       else setErrorUsername("Username too short");
     } else setErrorUsername("");
   }, [username]);
   
   useEffect(() => {
-    if (password.length < 8) {
+    if (password.length < 3) {
       if (!initialLoad2.current) initialLoad2.current = true;
       else setErrorPassword("Password too short");
     } else setErrorPassword("");
